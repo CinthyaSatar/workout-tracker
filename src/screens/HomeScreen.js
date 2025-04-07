@@ -137,7 +137,7 @@ export default function HomeScreen({ navigation }) {
     <AppLayout>
       {/* Top Navigation Bar - Similar to Yoga International */}
       <View style={styles.topNav}>
-        <Text style={styles.logo}>FITTRACK</Text>
+        <Text style={styles.logo}>FITTRACKR</Text>
         <View style={styles.navButtons}>
           {NAV_CATEGORIES.map((category) => (
             <TouchableOpacity
@@ -177,7 +177,9 @@ export default function HomeScreen({ navigation }) {
             style={styles.heroBannerGradient}
           >
             <View style={styles.heroBannerContent}>
-              <Text style={styles.heroTitle}>Track Your Fitness Journey</Text>
+              <Text style={styles.heroTitle}>
+                FITTRACKR: Your Fitness Journey
+              </Text>
               <Text style={styles.heroSubtitle}>
                 The complete workout tracker to help you achieve your fitness
                 goals
@@ -262,17 +264,22 @@ export default function HomeScreen({ navigation }) {
 
           <View style={styles.testimonialCard}>
             <Text style={styles.testimonialText}>
-              "This app has completely transformed my workout routine. I can easily track my progress and see how far I've come!"
+              "This app has completely transformed my workout routine. I can
+              easily track my progress and see how far I've come!"
             </Text>
             <Text style={styles.testimonialAuthor}>- Sarah J.</Text>
           </View>
+        </View>
 
         {/* Call to Action Section */}
         <View style={styles.ctaSection}>
           <View style={styles.sectionContainer}>
-            <Text style={styles.ctaTitle}>Ready to Start Your Fitness Journey?</Text>
+            <Text style={styles.ctaTitle}>
+              Ready to Start Your Fitness Journey?
+            </Text>
             <Text style={styles.ctaSubtitle}>
-              Join thousands of users who have transformed their fitness with FitTrack
+              Join thousands of users who have transformed their fitness with
+              FitTrack
             </Text>
           </View>
 
@@ -288,14 +295,18 @@ export default function HomeScreen({ navigation }) {
               style={styles.ctaSecondaryButton}
               onPress={() => navigation.navigate("EditWorkout")}
             >
-              <Text style={styles.ctaSecondaryButtonText}>Explore Features</Text>
+              <Text style={styles.ctaSecondaryButtonText}>
+                Explore Features
+              </Text>
             </TouchableOpacity>
           </View>
         </View>
 
         {/* Footer */}
         <View style={styles.footer}>
-          <Text style={styles.footerText}>© 2023 FitTrack. All rights reserved.</Text>
+          <Text style={styles.footerText}>
+            © 2023 FITTRACKR. All rights reserved.
+          </Text>
         </View>
       </ScrollView>
     </AppLayout>
@@ -321,9 +332,9 @@ const styles = StyleSheet.create({
     letterSpacing: 1,
   },
   navButtons: {
-    flexDirection: 'row',
+    flexDirection: "row",
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: "center",
     marginHorizontal: spacing.lg,
   },
   navButton: {
@@ -399,9 +410,9 @@ const styles = StyleSheet.create({
     maxWidth: 500,
   },
   heroButtons: {
-    flexDirection: 'row',
-    justifyContent: 'center',
-    width: '100%',
+    flexDirection: "row",
+    justifyContent: "center",
+    width: "100%",
   },
   heroButtonPrimary: {
     backgroundColor: colors.secondary,
@@ -417,7 +428,7 @@ const styles = StyleSheet.create({
     fontWeight: fontWeights.semibold,
   },
   heroButtonSecondary: {
-    backgroundColor: 'transparent',
+    backgroundColor: "transparent",
     paddingVertical: spacing.md,
     paddingHorizontal: spacing.xl,
     borderRadius: borderRadius.round,
@@ -437,20 +448,20 @@ const styles = StyleSheet.create({
     marginBottom: spacing.xl,
   },
   marketingGrid: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    justifyContent: 'center',
+    flexDirection: "row",
+    flexWrap: "wrap",
+    justifyContent: "center",
     paddingHorizontal: spacing.md,
     gap: spacing.lg,
   },
   marketingCard: {
-    width: '100%',
+    width: "100%",
     maxWidth: 300,
     backgroundColor: colors.card,
     borderRadius: borderRadius.lg,
     padding: spacing.lg,
     marginBottom: spacing.lg,
-    alignItems: 'center',
+    alignItems: "center",
     ...shadows.small,
     borderWidth: 1,
     borderColor: colors.border,
@@ -460,8 +471,8 @@ const styles = StyleSheet.create({
     height: 80,
     borderRadius: 40,
     backgroundColor: colors.primaryLight,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
     marginBottom: spacing.md,
   },
   marketingIcon: {
@@ -474,12 +485,12 @@ const styles = StyleSheet.create({
     fontWeight: fontWeights.semibold,
     color: colors.text,
     marginBottom: spacing.sm,
-    textAlign: 'center',
+    textAlign: "center",
   },
   marketingDescription: {
     fontSize: fontSizes.sm,
     color: colors.textSecondary,
-    textAlign: 'center',
+    textAlign: "center",
     lineHeight: 22,
   },
   sectionContainer: {
@@ -519,7 +530,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: colors.border,
     padding: spacing.md,
-    alignItems: 'center',
+    alignItems: "center",
   },
   screenshotImageContainer: {
     height: 400,
@@ -527,7 +538,7 @@ const styles = StyleSheet.create({
     backgroundColor: colors.primaryLight,
     borderRadius: borderRadius.md,
     marginBottom: spacing.md,
-    overflow: 'hidden',
+    overflow: "hidden",
   },
   screenshotImage: {
     width: "100%",
@@ -538,7 +549,7 @@ const styles = StyleSheet.create({
     fontSize: fontSizes.md,
     fontWeight: fontWeights.medium,
     color: colors.text,
-    textAlign: 'center',
+    textAlign: "center",
   },
 
   // Testimonials section
@@ -555,13 +566,13 @@ const styles = StyleSheet.create({
     ...shadows.small,
     borderWidth: 1,
     borderColor: colors.border,
-    alignItems: 'center',
+    alignItems: "center",
   },
   testimonialText: {
     fontSize: fontSizes.lg,
-    fontStyle: 'italic',
+    fontStyle: "italic",
     color: colors.text,
-    textAlign: 'center',
+    textAlign: "center",
     marginBottom: spacing.md,
     lineHeight: 28,
   },
@@ -575,25 +586,25 @@ const styles = StyleSheet.create({
     backgroundColor: colors.primaryLight,
     paddingVertical: spacing.xxl,
     marginBottom: 0,
-    alignItems: 'center',
+    alignItems: "center",
   },
   ctaTitle: {
     fontSize: fontSizes.xxl,
     fontWeight: fontWeights.bold,
     color: colors.primary,
-    textAlign: 'center',
+    textAlign: "center",
     marginBottom: spacing.sm,
   },
   ctaSubtitle: {
     fontSize: fontSizes.lg,
     color: colors.text,
-    textAlign: 'center',
+    textAlign: "center",
     marginBottom: spacing.xl,
     maxWidth: 600,
   },
   ctaButtons: {
-    flexDirection: 'row',
-    justifyContent: 'center',
+    flexDirection: "row",
+    justifyContent: "center",
     marginTop: spacing.md,
   },
   ctaPrimaryButton: {
@@ -610,7 +621,7 @@ const styles = StyleSheet.create({
     fontWeight: fontWeights.semibold,
   },
   ctaSecondaryButton: {
-    backgroundColor: 'transparent',
+    backgroundColor: "transparent",
     paddingVertical: spacing.md,
     paddingHorizontal: spacing.xl,
     borderRadius: borderRadius.round,
@@ -628,7 +639,7 @@ const styles = StyleSheet.create({
   footer: {
     backgroundColor: colors.dark,
     padding: spacing.xl,
-    alignItems: 'center',
+    alignItems: "center",
   },
   footerText: {
     color: colors.light,
