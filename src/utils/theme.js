@@ -6,31 +6,31 @@ import { Dimensions } from "react-native";
 const { width, height } = Dimensions.get("window");
 
 export const colors = {
-  // Main brand colors inspired by the Mantra theme
-  primary: "#7E57C2", // Purple - main brand color
-  primaryDark: "#5E35B1", // Darker purple for gradients
-  primaryLight: "#D1C4E9", // Light purple for backgrounds
-  secondary: "#FF9A8B", // Soft coral/peach for accents
+  // Main brand colors - Earth tones
+  primary: "#A67C52", // Bronze/copper - main brand color
+  primaryDark: "#8B5A2B", // Darker bronze for gradients
+  primaryLight: "#D7C0A1", // Light beige for backgrounds
+  secondary: "#606C38", // Olive green for accents
 
   // UI colors
-  background: "#F8F5FF", // Very light purple tint for background
-  card: "#ffffff", // White for cards
-  text: "#3A3A3A", // Dark gray for main text
-  textSecondary: "#6D6D6D", // Medium gray for secondary text
-  textLight: "#9E9E9E", // Light gray for tertiary text
-  border: "#E8E2F4", // Light purple-gray for borders
+  background: "#F5F1E9", // Warm beige background
+  card: "#FFFFFF", // White for cards
+  text: "#3A3025", // Dark brown for main text
+  textSecondary: "#6B5B4E", // Medium brown for secondary text
+  textLight: "#9C8E82", // Light brown for tertiary text
+  border: "#E6DFD4", // Light beige for borders
 
   // Functional colors
-  success: "#66BB6A", // Green with slight desaturation
-  error: "#EF5350", // Softer red
-  warning: "#FFCA28", // Soft amber
-  info: "#42A5F5", // Soft blue
+  success: "#606C38", // Olive green
+  error: "#BC6C25", // Burnt orange
+  warning: "#DDA15E", // Light bronze
+  info: "#83A598", // Sage green
 
   // Additional colors
-  accent1: "#81D4FA", // Light blue
-  accent2: "#A5D6A7", // Light green
-  accent3: "#FFE082", // Light amber
-  dark: "#212121", // Almost black
+  accent1: "#DDA15E", // Light bronze
+  accent2: "#FEFAE0", // Cream
+  accent3: "#283618", // Dark olive
+  dark: "#22333B", // Dark slate
   light: "#FFFFFF", // White
 };
 
